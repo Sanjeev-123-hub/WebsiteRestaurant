@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Little Lemon - Home</title>
+  <link rel="stylesheet" href="{% static 'restaurantapp/index.css' %}">
+</head>
+<body>
+  <header>
+    <h1>LITTLE LEMON</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="admin.html">Administration</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2 >30% Off This Weekend</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at congue massa.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <img src="{% static 'restaurantapp/rest1.jpg' %}" alt="New Menu">
+      <h3>Our New Menu</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at congue massa.</p>
+    </div>
+
+    <div class="card">
+      <img src="{% static 'restaurantapp/rest2.jpg' %}" alt="Book a Table">
+      <h3>Book a table</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at congue massa.</p>
+    </div>
+
+    <div class="card">
+      <img src="{% static 'restaurantapp/rest3.jpg' %}" alt="Opening Hours">
+      <h3>Opening Hours</h3>
+      <p>Mon - Fri: 2pm - 10pm<br>Sat: 2pm - 11pm<br>Sun: 2pm - 9pm</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed and Developed by <b>Sangeeth</b></p>
+  </footer>
+</body>
+</html>

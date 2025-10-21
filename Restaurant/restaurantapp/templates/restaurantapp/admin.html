@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Little Lemon - Administration</title>
+  <link rel="stylesheet" href="{% static 'restaurantapp/admin.css' %}">
+</head>
+<body>
+  <header>
+    <h1>LITTLE LEMON</h1>
+    <nav>
+      <ul>
+        <li><a href="index">Home</a></li>
+        <li><a href="menu">Menu</a></li>
+        <li><a href="admin" class="active">Administration</a></li>
+        <li><a href="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="admin-section">
+    <h2>Our Administration Team</h2>
+    <div class="admin-grid">
+      <div class="admin-card">
+        <img src="{% static 'restaurantapp/image1.jpg' %}" alt="Admin 1">
+        <h3>Mr. Arjun</h3>
+        <p>Manager</p>
+      </div>
+      <div class="admin-card">
+        <img src="{% static 'restaurantapp/images.jpg' %}" alt="Admin 2">
+        <h3>Ms. Priya</h3>
+        <p>Chef</p>
+      </div>
+      <div class="admin-card">
+        <img src="{% static 'restaurantapp/image2.jpg' %}" alt="Admin 3">
+        <h3>Mr. Rahul</h3>
+        <p>Assistant Chef</p>
+      </div>
+      <div class="admin-card">
+        <img src="{% static 'restaurantapp/image3.jpg' %}" alt="Admin 4">
+        <h3>Ms. Kavya</h3>
+        <p>Receptionist</p>
+      </div>
+      <div class="admin-card">
+        <img src="{% static 'restaurantapp/images6.jpg' %}" alt="Admin 5">
+        <h3>Mr. Manoj</h3>
+        <p>Waiter</p>
+      </div>
+      <div class="admin-card">
+        <img src="{% static 'restaurantapp/images5.jpg' %}" alt="Admin 6">
+        <h3>Ms. Sneha</h3>
+        <p>Cashier</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed and Developed by <b>Sangeeth</b></p>
+  </footer>
+</body>
+</html>
